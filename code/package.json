@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "csv-parser": "^3.2.0",
     "dotenv": "^16.4.7",
     "lab01-repos-populares": "file:",
     "node-fetch": "^3.3.2"
