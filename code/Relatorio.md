@@ -19,22 +19,22 @@ A análise foi realizada utilizando a API GraphQL do GitHub para coletar dados d
 ## Hipóteses
 
 ### RQ 01: Sistemas populares são maduros/antigos?
-Hipótese: Esperamos que sistemas populares sejam maduros, mas projetos mais novos também podem ganhar destaque rapidamente.
+Hipótese: Esperamos que sistemas populares sejam maduros.
 
 ### RQ 02: Sistemas populares recebem muita contribuição externa?
-Hipótese: Acreditamos que sistemas populares recebem muitas contribuições, mas políticas rígidas podem limitar a aceitação de pull requests.
+Hipótese: Acreditamos que sistemas populares recebem muitas contribuições.
 
 ### RQ 03: Sistemas populares lançam releases com frequência?
-Hipótese: Suponhamos que frameworks e bibliotecas populares lancem releases frequentes, enquanto projetos mais estáveis podem ter menos lançamentos.
+Hipótese: Suponhamos que frameworks e bibliotecas populares lancem releases frequentes.
 
 ### RQ 04: Sistemas populares são atualizados com frequência?
-Hipótese: Achamos que sistemas populares são frequentemente atualizados para corrigir bugs e evoluir, mas projetos consolidados podem ter menos mudanças.
+Hipótese: Achamos que sistemas populares são frequentemente atualizados para corrigir bugs e evoluir.
 
 ### RQ 05: Sistemas populares são escritos nas linguagens mais populares?
-Hipótese: A tendência é que sim, especialmente com JavaScript e Python, mas há projetos bem-sucedidos em linguagens menos comuns.
+Hipótese: A tendência é que sim, especialmente com JavaScript e Python.
 
 ### RQ 06: Sistemas populares possuem um alto percentual de issues fechadas?
-Hipótese: Supomos que sim, pois são bem gerenciados, mas o grande volume pode dificultar o fechamento rápido.
+Hipótese: Supomos que sim, pois são bem gerenciados.
 
 ### RQ 07 Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?
 Hipótese: Acreditamos que linguagens populares atraem mais desenvolvedores, resultando em mais contribuições, releases e atualizações frequentes.
