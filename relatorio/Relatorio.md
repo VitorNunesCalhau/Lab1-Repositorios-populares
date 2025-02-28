@@ -40,5 +40,37 @@ Hipótese: Supomos que sim, pois são bem gerenciados.
 Hipótese: Acreditamos que linguagens populares atraem mais desenvolvedores, resultando em mais contribuições, releases e atualizações frequentes.
 
 ## Resultados Obtidos
+### RQ 01
+Mediana da idade dos repositórios  - 8.25
+![Mostra a mediana da idade dos repositórios populares](graficos.RQ01)
+
+### RQ 02
+Mediana de pull requests - 613.5
+![Mostra a mediana do total de pull requests aceitos dos repositórios populares](graficos.RQ02)
+
+### RQ 03
+Mediana de releases - 32.5
+![Mostra a mediana da total de releases dos repositórios populares](graficos.RQ03)
+
+### RQ 04
+Mediana do tempo desde última alteração - 7
+![Mostra a mediana do tempo da última atualização dos repositórios populares](graficos.RQ04)
+
+### RQ 05
+Python - 171
+TypeScript - 145
+JavaScript - 145
+None - 105
+Go - 72
+Java - 52
+C++ - 51
+C - 26
+Shell - 23
+Jupyter Notebook - 21
+![Mostra a mediana das linguagens primárias dos repositórios populares](graficos.RQ05)
+
+### RQ 06
+Mediana do ratio de issues: 0.86
+![Mostra a mediana da razão entre número de issues fechadas pelo total de issues dos repositórios populares](graficos.RQ06)
 
 ## Discussão
