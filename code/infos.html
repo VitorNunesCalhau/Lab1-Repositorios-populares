@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Análise de Repositórios</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .graphs {
+            width: 50%;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análise de Repositórios</h1>
+    <div class="graphs">
+        <h2>Questão 1</h2>
+        <canvas id="age"></canvas>
+        <h2>Questão 2</h2>
+        <canvas id="pullRequests" ></canvas>
+        <h2>Questão 3</h2>
+        <canvas id="releases"></canvas>
+        <h2>Questão 4</h2>
+        <canvas id="lastCommit"></canvas>
+        <h2>Questão 5</h2>
+        <canvas id="languages"></canvas>
+        <h2>Questão 6</h2>
+        <canvas id="closedIssues"></canvas>
+    </div>
+    
+
+    <script>
+        // Question 1
+        const age = document.getElementById('age').getContext('2d');
+        barGraph(age, 'Idade do repositório', 8.25);
+
+        // Question 2
+        const pullRequests = document.getElementById('pullRequests').getContext('2d');
+        barGraph(pullRequests, 'Total de pull requests aceitos', 613.5);
+
+        // Question 3
+        const releases = document.getElementById('releases').getContext('2d');
+        barGraph(releases, 'Total de releases', 32.5);
+
+        // Question 4
+        const lastCommit = document.getElementById('lastCommit').getContext('2d');
+        barGraph(lastCommit, 'Dias desde a última atualização', 7);
+
+        // Question 5
+        const languagesCtx = document.getElementById('languages').getContext('2d');
+        new Chart(languagesCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Python', 'TypeScript', 'JavaScript', 'None', 'Go', 'Java', 'C++', 'C', 'Shell', 'Jupyter Notebook', 'HTML', 'Kotlin', 'Swift', 'Ruby', 'C#'],
+                datasets: [{
+                    data: [171, 145, 145, 105, 72, 52, 51, 26, 23, 21],
+                    backgroundColor: [
+                        'rgb(255, 179, 186)',  // Python
+                        'rgb(179, 255, 179)',  // TypeScript
+                        'rgb(179, 226, 255)',  // JavaScript
+                        'rgb(255, 255, 179)',  // None
+                        'rgb(255, 213, 179)',  // Go
+                        'rgb(179, 204, 255)',  // Java
+                        'rgb(204, 179, 255)',  // C++
+                        'rgb(255, 204, 179)',  // C
+                        'rgb(179, 255, 204)',  // Shell
+                        'rgb(255, 229, 179)'   // Jupyter Notebook
+                    ],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': ' + tooltipItem.raw + ' repositórios';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Question 6
+        const closedIssues = document.getElementById('closedIssues').getContext('2d');
+        barGraph(closedIssues, 'Porcentagem de issues fechadas)', 0.86);
+
+        function barGraph(ctx, label, popularValue, maxY = null) {
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [''],
+                    datasets: [{
+                        label: label,
+                        data: [popularValue],
+                        backgroundColor: ['rgb(18, 113, 201)'],
+                        borderWidth: 1,
+                        barThickness: 100
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: maxY
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
