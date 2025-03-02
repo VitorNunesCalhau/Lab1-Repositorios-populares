@@ -36,9 +36,6 @@ Hipótese: A tendência é que sim, especialmente com JavaScript e Python.
 ### RQ 06: Sistemas populares possuem um alto percentual de issues fechadas?
 Hipótese: Supomos que sim, pois são bem gerenciados.
 
-### RQ 07 Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?
-Hipótese: Acreditamos que linguagens populares atraem mais desenvolvedores, resultando em mais contribuições, releases e atualizações frequentes.
-
 ## Resultados Obtidos
 ### RQ 01
 Mediana da idade dos repositórios  - 8.25
@@ -81,7 +78,7 @@ Com os dados coletados, podemos confirmar a nossa hipótese de que sistemas popu
 Os dados coletados provam que nossa hipótese estava correta, entretanto, se levarmos em conta que o número de pull requests abertos, não significa que eles foram aceitos, pode ser que o número de contribuições (que não chegaram a ser efetivadas no projeto), seja ainda maior.
 
 ### Análise RQ03
-Com uma mediana de 32.5 releases, pode-se confirmar a hipotese levantada de que seim, é frequentemente lançado versões novas para os projetos populares do github.
+Com uma mediana de 32.5 releases, pode-se confirmar a hipotese levantada de que sim, é frequentemente lançado versões novas para os projetos populares do github.
 
 ### Análise RQ04
 Com os dados coletados podemos confirmar nossa hipotese de que sistemas populares são frequentemente atualizados. Infelizmente não foi possível filrar se o tipo de atualiação é para a correção de bugs, entretanto pode-se inferir que uma atualização a cada 7 dias dificilmente será apenas de evolutivas.
